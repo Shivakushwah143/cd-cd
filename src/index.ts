@@ -21,6 +21,9 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/data", dataRoutes);
+app.get("/test-staging", (req, res) => {
+  res.json({ message: "Hello from staging server 🚀" });
+});
 
 app.get("/login", (req, res) => {
   res.json({ message: "Login feature coming soon 🚀" });
