@@ -22,6 +22,10 @@ app.use(express.json());
 
 app.use("/api/data", dataRoutes);
 
+app.get("/login", (req, res) => {
+  res.json({ message: "Login feature coming soon 🚀" });
+});
+
 
 // Database connection
 mongoose
